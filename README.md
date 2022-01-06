@@ -7,4 +7,4 @@
 3. 點擊下一步或上一步切換流程的顯示
    
 ### 畫面展示
-![image](./image/snippet.png)
+![image](./image/snippet.PNG)
