@@ -63,3 +63,20 @@ function setBtnDisplay() {
 
 stepBtnGroup.addEventListener('click', BtnClicked)
 
+// dark-mode
+const magnifier = document.querySelector('.magnifier img')
+const cart = document.querySelector('.cart img')
+const darkToggle = document.querySelector('.dark-toggle img')
+const darkToggleIcon = document.querySelector('#dark-toggle-icon')
+
+function handleDarkToggle(e) {
+  if (e.target.checked) {
+    document.documentElement.setAttribute("data-theme", "dark");
+  } else {
+    document.documentElement.setAttribute("data-theme", "light");
+  }
+}
+
+
+
+darkToggleIcon.addEventListener('click', handleDarkToggle)
