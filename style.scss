@@ -119,14 +119,14 @@ input:invalid {
   border-radius: 4px;
   height: 40px;
   width: 100%;
-  padding: 0.75rem 1rem;
+  padding: 12px 16px;
   background-color: var(--body-bg);
 }
 @mixin getStepNums($num) {
   @for $i from 1 through $num {
     &:nth-child(#{$i}) .circle-container::before {
       content: "#{$i}";
-      line-height: 30px;
+      line-height: 1.875rem;
       background-color: var();
     }
   }
@@ -519,15 +519,15 @@ nav {
   }
   .form-row:first-child {
     flex: 30%;
-    margin-right: 4%;
+    margin-right: 30px;
   }
   .form-row:nth-child(2) {
     flex: 60%;
-    margin-left: 4%;
+
   }
   @include pc-width {
     .form-row:nth-child(3) {
-      margin-right: 8%;
+      margin-right: 30px;
     }
     .form-row:nth-child(3),
     .form-row:nth-child(4) {
@@ -535,11 +535,10 @@ nav {
     }
     .form-row:nth-last-child(2) {
       flex: 30%;
-      margin-right: 4%;
+      margin-right: 30px;
     }
     .form-row:last-child {
       flex: 60%;
-      margin-left: 4%;
     }
   }
 }
@@ -597,11 +596,10 @@ nav {
   }
   .form-row:nth-last-child(2) {
     flex: 0.5;
-    margin-right: 4%;
+    margin-right: 30px;
   }
   .form-row:last-child {
     flex: 0.5;
-    margin-left: 4%;
   }
 }
 
